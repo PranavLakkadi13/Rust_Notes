@@ -1,0 +1,8 @@
+[package]
+name = "Async-Rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+futures = "0.3.31"
+smol = "2.0.2"

@@ -1,0 +1,1 @@
+/Users/pranavlakkadi/Codes/Rust_Trevor/03-Closures/target/debug/Closures: /Users/pranavlakkadi/Codes/Rust_Trevor/03-Closures/src/closures.rs /Users/pranavlakkadi/Codes/Rust_Trevor/03-Closures/src/main.rs

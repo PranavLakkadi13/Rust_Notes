@@ -1,0 +1,1 @@
+/Users/pranavlakkadi/Codes/Rust_Trevor/06-Structs/target/debug/Structs: /Users/pranavlakkadi/Codes/Rust_Trevor/06-Structs/src/main.rs /Users/pranavlakkadi/Codes/Rust_Trevor/06-Structs/src/test_mut_structs.rs /Users/pranavlakkadi/Codes/Rust_Trevor/06-Structs/src/test_structs.rs /Users/pranavlakkadi/Codes/Rust_Trevor/06-Structs/src/test_structs_methods.rs

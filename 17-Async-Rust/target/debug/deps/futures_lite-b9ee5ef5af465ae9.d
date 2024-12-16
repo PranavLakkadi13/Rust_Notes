@@ -1,0 +1,9 @@
+/Users/pranavlakkadi/Codes/Rust_Trevor/17-Async-Rust/target/debug/deps/libfutures_lite-b9ee5ef5af465ae9.rmeta: /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-lite-2.5.0/src/lib.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-lite-2.5.0/src/future.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-lite-2.5.0/src/prelude.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-lite-2.5.0/src/stream.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-lite-2.5.0/src/io.rs
+
+/Users/pranavlakkadi/Codes/Rust_Trevor/17-Async-Rust/target/debug/deps/futures_lite-b9ee5ef5af465ae9.d: /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-lite-2.5.0/src/lib.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-lite-2.5.0/src/future.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-lite-2.5.0/src/prelude.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-lite-2.5.0/src/stream.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-lite-2.5.0/src/io.rs
+
+/Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-lite-2.5.0/src/lib.rs:
+/Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-lite-2.5.0/src/future.rs:
+/Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-lite-2.5.0/src/prelude.rs:
+/Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-lite-2.5.0/src/stream.rs:
+/Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-lite-2.5.0/src/io.rs:
