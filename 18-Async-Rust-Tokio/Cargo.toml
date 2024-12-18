@@ -1,0 +1,11 @@
+[package]
+name = "async-tokio"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.37", features = ["full"] }
+dotenv = "0.15" # For environment variables
+reqwest = "0.12.9"
+futures = "0.3.31"
+

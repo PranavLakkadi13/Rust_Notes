@@ -1,0 +1,10 @@
+/Users/pranavlakkadi/Codes/Rust_Trevor/18-Async-Rust-Tokio/target/debug/deps/librustls_pki_types-fc41dc7121f5d270.rmeta: /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rustls-pki-types-1.10.1/src/lib.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rustls-pki-types-1.10.1/src/base64.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rustls-pki-types-1.10.1/src/server_name.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rustls-pki-types-1.10.1/src/pem.rs
+
+/Users/pranavlakkadi/Codes/Rust_Trevor/18-Async-Rust-Tokio/target/debug/deps/librustls_pki_types-fc41dc7121f5d270.rlib: /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rustls-pki-types-1.10.1/src/lib.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rustls-pki-types-1.10.1/src/base64.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rustls-pki-types-1.10.1/src/server_name.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rustls-pki-types-1.10.1/src/pem.rs
+
+/Users/pranavlakkadi/Codes/Rust_Trevor/18-Async-Rust-Tokio/target/debug/deps/rustls_pki_types-fc41dc7121f5d270.d: /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rustls-pki-types-1.10.1/src/lib.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rustls-pki-types-1.10.1/src/base64.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rustls-pki-types-1.10.1/src/server_name.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rustls-pki-types-1.10.1/src/pem.rs
+
+/Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rustls-pki-types-1.10.1/src/lib.rs:
+/Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rustls-pki-types-1.10.1/src/base64.rs:
+/Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rustls-pki-types-1.10.1/src/server_name.rs:
+/Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rustls-pki-types-1.10.1/src/pem.rs:

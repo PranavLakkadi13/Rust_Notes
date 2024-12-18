@@ -1,0 +1,10 @@
+/Users/pranavlakkadi/Codes/Rust_Trevor/18-Async-Rust-Tokio/target/debug/deps/libsqlformat-3ccc24bba29ed911.rmeta: /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.6/src/lib.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.6/src/formatter.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.6/src/indentation.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.6/src/inline_block.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.6/src/params.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.6/src/tokenizer.rs
+
+/Users/pranavlakkadi/Codes/Rust_Trevor/18-Async-Rust-Tokio/target/debug/deps/sqlformat-3ccc24bba29ed911.d: /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.6/src/lib.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.6/src/formatter.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.6/src/indentation.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.6/src/inline_block.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.6/src/params.rs /Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.6/src/tokenizer.rs
+
+/Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.6/src/lib.rs:
+/Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.6/src/formatter.rs:
+/Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.6/src/indentation.rs:
+/Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.6/src/inline_block.rs:
+/Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.6/src/params.rs:
+/Users/pranavlakkadi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.6/src/tokenizer.rs:
