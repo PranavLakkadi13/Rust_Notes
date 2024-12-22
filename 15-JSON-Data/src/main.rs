@@ -34,11 +34,11 @@ fn main() {
     let y = to_string_pretty(&dog1);
 
     if y.is_ok() {
-        // std::println!("{}", y.ok().unwrap());
+        std::println!("{}", y.ok().unwrap());
     }
 
     // deserialze_data();
-    deserialze_data2();
+    // deserialze_data2();
 }
 
 #[allow(dead_code)]
