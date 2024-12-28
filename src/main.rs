@@ -8,6 +8,8 @@ use serde::Deserialize;
 use std::net::SocketAddr;
 use tower_http::services::ServeDir;
 mod error;
+pub use crate::error::{Error, Result}; // using the self made modified version of Error
+mod web;
 
 #[tokio::main]
 async fn main() {
@@ -15,6 +17,7 @@ async fn main() {
     // the below fn was written to dynamically modularise the code
     let routes_all = Router::new()
         .merge(router_hello()) // this is the routes its gonna take first
+        .merge(web::routes_login::routes())
         .fallback_service(route_static()); // but if no route is found it hits the fallback static route
 
     // the region where we deal with the server like giving the ip address and port number
@@ -41,7 +44,8 @@ fn router_hello() -> Router {
 }
 
 // this is for the static file routing.....
-fn route_static() -> Router { // currently the code here is going to get the route of the passed fallback path 
+fn route_static() -> Router {
+    // currently the code here is going to get the route of the passed fallback path
     // here the code has been given the access to the root of the dir and the path shared in call will be placed
     Router::new().nest_service("/", get_service(ServeDir::new("./")))
 }
