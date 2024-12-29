@@ -1,14 +1,17 @@
 use axum::{
     extract::{Path, Query},
-    response::{Html, IntoResponse},
+    middleware,
+    response::{Html, IntoResponse, Response},
     routing::{get, get_service},
     Router,
 };
 use serde::Deserialize;
 use std::net::SocketAddr;
+use tower_cookies::CookieManagerLayer;
 use tower_http::services::ServeDir;
 mod error;
 pub use crate::error::{Error, Result}; // using the self made modified version of Error
+mod model;
 mod web;
 
 #[tokio::main]
@@ -18,6 +21,10 @@ async fn main() {
     let routes_all = Router::new()
         .merge(router_hello()) // this is the routes its gonna take first
         .merge(web::routes_login::routes())
+        .layer(middleware::map_response(main_response_mapper)) // here we are handling the middleware response
+        // the below code u can see is for layer and the layer are executed bottom to top as in the cookies is excuted first then the middleware
+        // so if another layer uses the cookies it has to be on top of the cookies layer
+        .layer(CookieManagerLayer::new()) // this is to deal with cookies
         .fallback_service(route_static()); // but if no route is found it hits the fallback static route
 
     // the region where we deal with the server like giving the ip address and port number
@@ -35,6 +42,15 @@ async fn main() {
     // End Region --> End Server
 }
 
+// this is a layer that takes a response and returns a response (can be the same response or not)
+// layer is basically a middleware
+async fn main_response_mapper(res: Response) -> Response {
+    std::println!("->> {:<32} - main_response_mapper", "Res_Mapper");
+    std::println!();
+    res
+}
+
+// this is a router code to handle the hello part together:
 fn router_hello() -> Router {
     // Router::new().route("/hello", get(|| async { Html("<h1> Hello world </h1> ") }));
     Router::new()
