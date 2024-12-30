@@ -5,6 +5,7 @@ use axum::{
     routing::{get, get_service},
     Router,
 };
+use model::ModelController;
 use serde::Deserialize;
 use std::net::SocketAddr;
 use tower_cookies::CookieManagerLayer;
@@ -15,12 +16,17 @@ mod model;
 mod web;
 
 #[tokio::main]
-async fn main() {
+async fn main() -> Result<()> {
+    // here we are setting up and initialising a struct variable 
+    let mc = ModelController::new().await?;
+
+
     // here usually the code uses a handler in the get request instead of the writing the async code
     // the below fn was written to dynamically modularise the code
     let routes_all = Router::new()
         .merge(router_hello()) // this is the routes its gonna take first
         .merge(web::routes_login::routes())
+        .nest("/api", web::routes_tickets::routes(mc.clone())) // merge with nest similar to merger but will also prefix it with route /api/...
         .layer(middleware::map_response(main_response_mapper)) // here we are handling the middleware response
         // the below code u can see is for layer and the layer are executed bottom to top as in the cookies is excuted first then the middleware
         // so if another layer uses the cookies it has to be on top of the cookies layer
@@ -40,6 +46,8 @@ async fn main() {
         .await
         .unwrap();
     // End Region --> End Server
+
+    std::result::Result::Ok(())
 }
 
 // this is a layer that takes a response and returns a response (can be the same response or not)

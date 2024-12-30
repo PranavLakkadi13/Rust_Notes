@@ -33,5 +33,18 @@ async fn quick_dev() -> Result<()> {
 
     req_login.await?.print().await.unwrap();
 
+
+    let creating_tickets  = https_client.do_post("/api/tickets",
+        json!({
+            "title": "ticket 69"
+        }),
+    );
+
+    creating_tickets.await?.print().await?;
+
+    https_client.do_get("/api/gettickets").await?.print().await?;
+
+    https_client.do_delete("/api/tickets/1").await?.print().await?;
+
     Ok(())
 }

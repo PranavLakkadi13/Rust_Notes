@@ -7,6 +7,10 @@ pub type Result<T> = std::result::Result<T, Error>;
 #[derive(Debug)]
 pub enum Error {
     LoginFail,
+
+    // Model Errors
+    TicketDeleteFailIdNotFound { id: u64 },
+    TicketCreateFailedEmptyTitle,
 }
 
 // this is must to impl
