@@ -12,21 +12,29 @@ use tower_cookies::CookieManagerLayer;
 use tower_http::services::ServeDir;
 mod error;
 pub use crate::error::{Error, Result}; // using the self made modified version of Error
+mod ctx;
 mod model;
 mod web;
+/// context crate
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    // here we are setting up and initialising a struct variable 
+    // here we are setting up and initialising a struct variable
     let mc = ModelController::new().await?;
 
+    // here are dealing with rotes for the tickets
+    let routes_api = web::routes_tickets::routes(mc.clone())
+        // you can also use a struct to deal with the middleware but fro simplicity we use from fn
+        // also writing the middleware code code like this will ensure it applies only to the routes api tickets calls to the routes in that folder
+        .route_layer(middleware::from_fn(web::mw_auth::mw_require_auth));
 
     // here usually the code uses a handler in the get request instead of the writing the async code
     // the below fn was written to dynamically modularise the code
     let routes_all = Router::new()
         .merge(router_hello()) // this is the routes its gonna take first
         .merge(web::routes_login::routes())
-        .nest("/api", web::routes_tickets::routes(mc.clone())) // merge with nest similar to merger but will also prefix it with route /api/...
+        // the the nest also helps in prefixing the request header with /api/.....
+        .nest("/api", routes_api) // merge with nest similar to merger but will also prefix it with route /api/...
         .layer(middleware::map_response(main_response_mapper)) // here we are handling the middleware response
         // the below code u can see is for layer and the layer are executed bottom to top as in the cookies is excuted first then the middleware
         // so if another layer uses the cookies it has to be on top of the cookies layer

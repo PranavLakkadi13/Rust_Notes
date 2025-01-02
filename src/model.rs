@@ -47,7 +47,7 @@ impl ModelController {
         let mut store = self.tickets_store.lock().ok().unwrap();
 
         if ticket_fc.title.is_empty() {
-            Error::TicketCreateFailedEmptyTitle;
+            return Err(Error::TicketCreateFailedEmptyTitle);
         }
 
         let id = store.len() as i64;

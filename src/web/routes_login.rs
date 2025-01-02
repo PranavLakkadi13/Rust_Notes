@@ -31,7 +31,8 @@ async fn api_login(cookies: Cookies, payload: Json<LoginPayLoad>) -> Result<Json
     // here in the future we can plan to add cookies that can bve sent to the user and keep session
     // here we are hardcoding the use of cookies and use as an auth token and value is user id with exipry and the sign --> example format
     // FIXME: THIS IS THE PLACE WHERE TO PLACE A REAL AUTHENTICATION TOKEN SIGNATURE/GENERATON
-    cookies.add(Cookie::new(AUTH_TOKEN, "user.1.exp.sign"));
+    // cookies.add(Cookie::new(AUTH_TOKEN, "1user.1.exp.sign")); --> wrong format so will throw error
+    cookies.add(Cookie::new(AUTH_TOKEN, "user-1.exp.sign"));
 
     // this is the result to the client
     let body = Json(json!({
