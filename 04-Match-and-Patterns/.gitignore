@@ -1,7 +1,3 @@
-# Ignore Rust/Cargo build output
-
 # Ignore macOS and Rust/Cargo build output
 .DS_Store
 target/
-Cargo.lock
-target
