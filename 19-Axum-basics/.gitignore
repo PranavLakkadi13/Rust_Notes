@@ -1,3 +1,4 @@
 # Ignore macOS and Rust/Cargo build output
 .DS_Store
+.env
 target/

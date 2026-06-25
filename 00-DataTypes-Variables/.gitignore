@@ -1,2 +1,4 @@
-target/
+# Ignore local files and Rust/Cargo build output
 .DS_Store
+.env
+target/
